@@ -12,8 +12,8 @@ asm/
 
 ## Programs
 
-| Program | Description |
-|---------|-------------|
+| Program                                             | Description                      |
+| --------------------------------------------------- | -------------------------------- |
 | [hello_world](programs/hello_world/hello_world.asm) | Prints "Hello, World!" to stdout |
 
 ## Getting Started
@@ -21,21 +21,33 @@ asm/
 ### Prerequisites
 
 - [NASM](https://www.nasm.us/) – Netwide Assembler
+  - Install on Debian/Ubuntu:
+    ```bash
+    sudo apt-get install nasm
+    ```
+  - Verify installation:
+    ```bash
+    nasm -v
+    ```
 - A Linux x86-64 environment (or compatible)
+  - Verify your system architecture:
+    ```bash
+    uname -m
+    ```
+    Expected output: `x86_64`
 
 ### Build & Run
 
 ```bash
 # Navigate to the program directory
-cd programs/hello_world
+cd programs/src/<directory_name> 
 
 # Assemble
-nasm -f elf64 hello_world.asm -o hello_world.o
+nasm -f elf64 <program_name>.asm -o <program_name>.o # -f elf64 specifies the output format for 64-bit Linux
 
 # Link
-ld hello_world.o -o hello_world
+ld <program_name>.o -o <program_name> # ld is the GNU linker
 
 # Run
-./hello_world
+./<program_name>
 ```
-
