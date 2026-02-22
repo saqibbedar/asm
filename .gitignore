@@ -1,0 +1,20 @@
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+a.out
+
+# Listing files
+*.lst
+
+# Map files
+*.map
+
+# Debug files
+*.pdb
+
+# MASM/TASM generated files
+*.bak
