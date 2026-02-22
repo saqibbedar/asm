@@ -14,7 +14,7 @@ asm/
 
 | Program                                             | Description                      |
 | --------------------------------------------------- | -------------------------------- |
-| [hello_world](programs/hello_world/hello_world.asm) | Prints "Hello, World!" to stdout |
+| [hello_world](programs/src/hello_world/firstProgram.asm) | Prints "Hello, Assembly on Linux!" |
 
 ## Getting Started
 
