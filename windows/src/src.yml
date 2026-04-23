@@ -1,0 +1,9 @@
+src:
+  - path: /assignments
+    description: contains assignments and lab tasks
+  - path: /main                  
+    description: contains main assembly programs from basics to advance
+  - path: /practice
+    description: includes all practice questions
+  - path: /questions
+    description: includes all important questions
